@@ -10,7 +10,7 @@ int main() {
     auto r1 = parser.dispatch("CREATE TABLE users", engine);
     assert(r1.ok && "table create failed");
 
-    auto r2 = parser.dispatch("INSERT INTO USERS VALUES (1, "Alice", 30)", engine);
+    auto r2 = parser.dispatch("INSERT INTO USERS VALUES (1, Alice, 30)", engine);
     assert(r2.ok && "insert failed");
 
     auto r3 = parser.dispatch("SELECT BY ID 1", engine);
