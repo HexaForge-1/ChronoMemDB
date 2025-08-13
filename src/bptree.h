@@ -6,4 +6,4 @@ public:
     void insert(int key, int record_id) {/* TODO */}
     int find(int key) const { /* TODO */ return -1; }
     // range query etc.
-};
+}; 
