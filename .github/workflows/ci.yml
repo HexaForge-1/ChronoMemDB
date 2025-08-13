@@ -1,13 +1,12 @@
 name: C++ Build and Test via CMake
 
-# Ye workflow tab chalega jab koi push ya pull request aaye main branch pe
 on:
   pull_request:
     branches:
       - main
   push:
     branches-ignore:
-      - main  # direct push ignore, hum main branch protection ke liye PR chahte hain
+      - main  
 
 jobs:
   build_and_test:
